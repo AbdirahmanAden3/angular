@@ -1,0 +1,10 @@
+<ng-template #show let-msg="showMessage">
+    <p style="font-size: 20px;" >my name is :{{msg.name}}, Iam {{msg.age}} years old & and Iam from {{msg.location}}</p>
+</ng-template>
+    <ng-container *ngTemplateOutlet="show; context:{showMessage:
+calc}">
+
+</ng-container>
+
+
+  
