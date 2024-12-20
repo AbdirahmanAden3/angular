@@ -1,10 +1,56 @@
-<ng-template #show let-msg="showMessage">
-    <p style="font-size: 20px;" >my name is :{{msg.name}}, Iam {{msg.age}} years old & and Iam from {{msg.location}}</p>
-</ng-template>
-    <ng-container *ngTemplateOutlet="show; context:{showMessage:
-calc}">
+<!-- <!-- <h1 style="text-align:center;">{{ t | date: 'dd-MM-yyyy' }}</h1>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>state</th>
+        <th>Salary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let em of  emoloye">
+        <td>{{em.id}}</td>
+        <td>{{em.name | titlecase}}</td>
+        <td>{{em.state | slice:0:3 | uppercase}}</td>
+        <td>{{em.salary | currency: 'USD'}}</td>
 
-</ng-container>
+    </tr>
+</tbody>
 
-
+    </table>
+    <hr>
   
+
+    {{sliceArr | slice:0:2}}
+
+
+
+</div> -->
+
+<!-- <div class="product-grid">
+    <div class="product-card" *ngFor="let product of products | slice: startIndex:endIndex">
+        <h2>{{product.name}}</h2>
+        <img [src]="product.imageUrl" alt="course image">
+    </div>
+</div>
+    <div class="btn-container">
+    <button type="button" (click)="previsous()" [disabled]="startIndex == 0">previesous</button>
+    <button t
+    ype="button" (click)="nextPge()" [disabled]="endIndex >=products.length">next</button>
+</div> -->
+
+
+<div class="container">
+    <h2>kilo meter to meter</h2>
+    <div class="input-group">
+        <label for="kilometer">Enter kilometer into meter</label>
+        <input type="number" id="Meter" [(ngModel)]="Meter">
+      <!-- <button (click)="convertMeter()">convert</button> -->
+      <button (click)="convertMeter()">Convert</button>
+    </div>
+    <br>
+    <p>meter in Kilometer is {{kiloMeter}}M</p>
+</div>
+

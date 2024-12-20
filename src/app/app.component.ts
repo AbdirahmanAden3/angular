@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 
 @Component({
@@ -7,29 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent   {
-  title = "ff";
-  nm : string = '';
-  em : string = '';
-  ph : string= '';
-  add : string = '';
- showHeading : boolean = false;
-  qualifications = [{school: '', degree:'', year :''}];
-  submitted : boolean = false
+  title : string = "ff";
+  // displaymessage : string = "qoraalka waala badaley";
+  // show(){
+  //   this.displaymessage  = "wuxuu ku qornaa waala badalay"
+  // }
 
-  addQualification(){
-    this.qualifications.push({school: '',degree: "", year:""})
-  }
-
-  submit() {
-    this.submitted = true;
-    this.showHeading =  false;
-  }
-  edit() {
-    this.submitted = false;
-    this.showHeading =  true;
-  }
+  // Courses : {id:number; name:string} [] =  [
+  //   {id:1, name: 'jascript Abdirahman'},
+  //   {id:2, name: 'Mastering react and javascript'},
+  //   {id:3, name: 'Mastering react and tpescript'},
+  //   {id:4, name: 'mastering html and css'},
+  //   {id:4, name: 'Mastering html and css'},
+  // ];
 
 }
+
+
+
 
 
 
